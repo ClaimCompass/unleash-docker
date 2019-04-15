@@ -26,6 +26,34 @@
     core-js "^2.5.7"
     regenerator-runtime "^0.12.0"
 
+"@passport-next/passport-google-oauth2@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@passport-next/passport-google-oauth2/-/passport-google-oauth2-1.0.0.tgz#cadef72d9ef42d549a5578eab338febdf234f806"
+  integrity sha512-rbAtK0eGgjQhT/MqMSuN7Mxy4XTr1/LINk5rYPVezP3MfkVYuK20V0XW9fg1ikFMvyxSdmfLTyYduud7SfFSqw==
+  dependencies:
+    "@passport-next/passport-oauth2" "1.7.x"
+
+"@passport-next/passport-oauth2@1.7.x":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@passport-next/passport-oauth2/-/passport-oauth2-1.7.1.tgz#c505d3b6339d5da5fafe80d7da10ec0e94143d5b"
+  integrity sha512-rCNznNTnUbMxTyOMCdeM2VcQvHI1CM0F07Hvao4kYDgAx59xk+QxiR6ax6ZIBrCE3glCy+pOaTQfXowXxwb4lg==
+  dependencies:
+    "@passport-next/passport-strategy" "1.1.x"
+    lodash "^4.17.11"
+    oauth "0.9.x"
+
+"@passport-next/passport-strategy@1.1.x", "@passport-next/passport-strategy@1.x.x":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@passport-next/passport-strategy/-/passport-strategy-1.1.0.tgz#4c0df069e2ec9262791b9ef1e23320c1d73bdb74"
+  integrity sha512-2KhFjtPueJG6xVj2HnqXt9BlANOfYCVLyu+pXYjPGBDT8yk+vQwc/6tsceIj+mayKcoxMau2JimggXRPHgoc8w==
+
+"@passport-next/passport@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@passport-next/passport/-/passport-2.1.0.tgz#a698068a38b7ed8a2bf1854559f66e7916e09d75"
+  integrity sha512-FwemLM9lU1FO5MRTojgWqGFU6pmAywOg9DdQ6482jyoOLH9BCbziycMKQJPjQKgXgwwytn1h5HAA3m9kcMUykA==
+  dependencies:
+    "@passport-next/passport-strategy" "1.x.x"
+
 "@types/bluebird@^3.5.25":
   version "3.5.25"
   resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.25.tgz#59188b871208092e37767e4b3d80c3b3eaae43bd"
@@ -2318,6 +2346,11 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
+
+oauth@0.9.x:
+  version "0.9.15"
+  resolved "https://registry.yarnpkg.com/oauth/-/oauth-0.9.15.tgz#bd1fefaf686c96b75475aed5196412ff60cfb9c1"
+  integrity sha1-vR/vr2hslrdUda7VGWQS/2DPucE=
 
 object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
