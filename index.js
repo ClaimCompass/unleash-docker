@@ -108,7 +108,7 @@ const options = {
 }
 
 if (process.env.DATABASE_URL_FILE) {
-  options.databaseUrl = fs.readFileSync(process.env.DATABASE_URL_FILE, 'utf8');
+  options.databaseUrl = fs.readFileSync(process.env.DATABASE_URL_FILE, 'utf8')
 }
 
 unleash.start(options)
