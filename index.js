@@ -21,6 +21,10 @@ const GoogleOAuth2Strategy = require('@passport-next/passport-google-oauth2')
 
 const { User, AuthenticationRequired } = unleash
 
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
 passport.use(
   new GoogleOAuth2Strategy(
     {
@@ -64,7 +68,7 @@ function enableGoogleOauth (app) {
 
   app.use('/api/admin/', (req, res, next) => {
     const whitelistRegex = new RegExp(
-      '@' + process.env.WHITELISTED_DOMAIN + '$'
+      '@' + escapeRegExp(process.env.WHITELISTED_DOMAIN) + '$'
     )
 
     if (req.user) {
