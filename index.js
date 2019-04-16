@@ -21,7 +21,7 @@ const GoogleOAuth2Strategy = require('@passport-next/passport-google-oauth2')
 
 const { User, AuthenticationRequired } = unleash
 
-function escapeRegExp(string) {
+function escapeRegExp (string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
 
