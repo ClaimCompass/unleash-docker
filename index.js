@@ -72,12 +72,11 @@ function enableGoogleOauth (app) {
     )
 
     if (req.user) {
-      console.log(req.user.email)
       if (whitelistRegex.test(req.user.email)) {
         next()
       } else {
         return res
-          .status('403')
+          .status('401')
           .json(
             new AuthenticationRequired({
               path: '/api/admin/login',
@@ -105,7 +104,8 @@ function enableGoogleOauth (app) {
 }
 
 const options = {
-  preHook: enableGoogleOauth
+  adminAuthentication: null,
+  preRouterHook: enableGoogleOauth
 }
 
 if (process.env.DATABASE_URL_FILE) {
