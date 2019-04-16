@@ -72,6 +72,7 @@ function enableGoogleOauth (app) {
     )
 
     if (req.user) {
+      console.log(req.user.email)
       if (whitelistRegex.test(req.user.email)) {
         next()
       } else {
