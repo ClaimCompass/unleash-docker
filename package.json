@@ -3,16 +3,22 @@
   "description": "Docker images for unleash.",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "NODE_ENV=production unleash",
     "lint": "eslint index.js",
     "test": "mocha"
+=======
+    "start": "NODE_ENV=production node index.js",
+    "test:ci": "echo 'no tests for unleash-docker';"
+>>>>>>> abea48ef9f6135989e7812577fa5fd73c8470094
   },
   "engines": {
-    "node": "8"
+    "node": ">=12"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@passport-next/passport": "^2.1.0",
     "@passport-next/passport-google-oauth2": "^1.0.0",
     "unleash-server": "3.2.1"
@@ -24,5 +30,13 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0"
+=======
+    "@exlinc/keycloak-passport": "^1.0.2",
+    "@passport-next/passport": "^3.1.0",
+    "@passport-next/passport-google-oauth2": "^1.0.0",
+    "basic-auth": "^2.0.1",
+    "passport": "^0.4.1",
+    "unleash-server": "^3.4.2"
+>>>>>>> abea48ef9f6135989e7812577fa5fd73c8470094
   }
 }

@@ -1,5 +1,6 @@
 'use strict'
 
+<<<<<<< HEAD
 /**
  * Unleash server implementation which supports Google Authentication
  * and access control. Only members of the specified domain are
@@ -12,6 +13,9 @@
  * - GOOGLE_CALLBACK_URL
  * - WHITELISTED_DOMAIN
  */
+=======
+const unleash = require('unleash-server');
+>>>>>>> abea48ef9f6135989e7812577fa5fd73c8470094
 
 const fs = require('fs')
 const unleash = require('unleash-server')
@@ -108,8 +112,12 @@ const options = {
   preRouterHook: enableGoogleOauth
 }
 
+<<<<<<< HEAD
 if (process.env.DATABASE_URL_FILE) {
   options.databaseUrl = fs.readFileSync(process.env.DATABASE_URL_FILE, 'utf8')
 }
 
 unleash.start(options)
+=======
+unleash.start(options);
+>>>>>>> abea48ef9f6135989e7812577fa5fd73c8470094
