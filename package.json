@@ -3,19 +3,23 @@
   "description": "Docker images for unleash.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production unleash",
+    "start": "NODE_ENV=production node index.js",
     "lint": "eslint index.js",
-    "test": "mocha"
+    "test": "mocha",
+    "test:ci": "echo 'no tests for unleash-docker';"
   },
   "engines": {
-    "node": "8"
+    "node": ">=12"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@passport-next/passport": "^2.1.0",
+    "@exlinc/keycloak-passport": "^1.0.2",
+    "@passport-next/passport": "^3.1.0",
     "@passport-next/passport-google-oauth2": "^1.0.0",
-    "unleash-server": "3.2.1"
+    "basic-auth": "^2.0.1",
+    "passport": "^0.4.1",
+    "unleash-server": "^3.4.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
