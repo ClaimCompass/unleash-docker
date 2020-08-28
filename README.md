@@ -4,24 +4,16 @@ We have published this image on docker-hub.
 Unlike the official Unleash image, this image supports OAuth2 with Google as the provider.
 
 ```bash
-<<<<<<< HEAD
 docker pull unleashorg/unleash-server:3.1
 docker run -d \
-    -e DATABASE_URL=postgres://user:pass@10.200.221.11:5432/unleash unleashorg/unleash-server
+    -e DATABASE_URL=postgres://user:pass@10.200.221.11:5432/unleash
     -e GOOGLE_CLIENT_ID=<client ID from Google> \
     -e GOOGLE_CLIENT_SECRET=<client secret from Google> \
     -e GOOGLE_CALLBACK_URL=http://unleash.example.com/api/auth/callback \
     -e WHITELISTED_DOMAIN=<allow signups only from this domain>
 ```
 
-=======
-docker pull unleashorg/unleash-server:3.4
-docker run -d -e DATABASE_URL=postgres://user:pass@10.200.221.11:5432/unleash unleashorg/unleash-server
-```
-
 Specifying secrets as environment variables are considered a bad security practice. Therefore, you can instead specify a file where unleash can read the database secret. This is done via the `DATABASE_URL_FILE` environment variable.
-
->>>>>>> abea48ef9f6135989e7812577fa5fd73c8470094
 
 ## Work locally with this repo 
 Start by cloning this repository. 
