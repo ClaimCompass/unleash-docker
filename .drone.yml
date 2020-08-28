@@ -11,3 +11,4 @@ steps:
       password:
         from_secret: docker_password
       auto_tag: true
+      add_host: "registry.npmjs.org:104.16.21.35"
